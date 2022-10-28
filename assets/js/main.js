@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
       //   console.log("Soumission du Formulaire");
 
       //1 Récupérer les différentes éléments du formulaire
-      //   console.log(document.getElementById("firstname").value);
-      //   console.log(document.getElementById("lastname").value);
-      //   console.log(document.getElementById("email").value);
-      //   console.log(document.getElementById("message").value);
+      console.log(document.getElementById("firstname").value);
+      console.log(document.getElementById("lastname").value);
+      console.log(document.getElementById("email").value);
+      console.log(document.getElementById("message").value);
 
       const data = {
         firstname: document.getElementById("firstname").value,
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       //2 Envoyer à un serveur les informations du formulaire
       const response = await axios.post(
-        "http://localhost:4000/send-email",
+        "https://site--formtofill--c7br8w6v87r6.code.run//send-email",
         data
       );
       console.log(response.data);
