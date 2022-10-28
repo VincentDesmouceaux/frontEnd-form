@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       //2 Envoyer à un serveur les informations du formulaire
       const response = await axios.post(
-        "https://site--formtofill--c7br8w6v87r6.code.run//send-email",
+        "https://site--formtofill--c7br8w6v87r6.code.run/send-email",
         data
       );
       console.log(response.data);
